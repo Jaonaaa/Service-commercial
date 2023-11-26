@@ -1,0 +1,78 @@
+$breakpoint-sm: 576px
+$breakpoint-md: 768px
+$breakpoint-lg: 1012px
+$breakpoint-xl: 1500px
+
+@mixin media($breakpoint)
+    @media (max-width: $breakpoint)
+        @content
+
+.head_nav
+    display: flex
+    width: 100%
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 1.7rem
+    transition: all 0.2s ease-in-out
+    .logo
+        display: flex
+        align-items: center
+        .icon
+            margin-right: 0.5rem
+            margin-top: 0.2rem
+            transition: all 0.2s ease-in-out
+
+            svg
+                @include media($breakpoint:$breakpoint-lg )
+                    width: 2.5rem
+                path
+                    transition: all 0.2s ease-in-out
+        .text
+            font-family: "Sora_SM"
+            font-size: 1.42rem
+            pointer-events: none
+            white-space: nowrap
+            transition: all 0.2s ease-in-out,opacity 1s ease-in
+            color: var(--text-bold-color)
+            @include media($breakpoint:$breakpoint-lg )
+                font-size: 1.34rem
+    .btn_small_nav
+        margin-top: 0.3rem
+        cursor: pointer
+        &:hover
+            svg
+                path
+                    stroke: var(--primary)
+        svg
+            path
+                stroke: var(--text-color)
+
+.navbar_container
+    .mini_head
+        margin-bottom: 1.7rem
+        margin-top: 0.9rem
+        .logo
+            width: 4rem
+            overflow: hidden
+            display: flex
+            justify-content: center
+            align-items: center
+            @include media($breakpoint:$breakpoint-lg )
+                width: 3.5rem
+            .icon
+                margin-right: 0
+                cursor: pointer
+                display: flex
+                justify-content: center
+                align-items: centers
+                svg
+                    transition: all 0.2s ease-in-out
+                &:hover
+                    svg
+                        transform: scale(0.8)
+                        path
+                            // fill: var(--primary)
+            .text
+                width: 0
+                opacity: 0
+                overflow: hidden

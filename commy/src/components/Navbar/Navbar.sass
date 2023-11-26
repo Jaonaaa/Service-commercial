@@ -1,0 +1,62 @@
+$breakpoint-sm: 576px
+$breakpoint-md: 768px
+$breakpoint-lg: 1012px
+$breakpoint-xl: 1500px
+
+@mixin media($breakpoint)
+    @media (max-width: $breakpoint)
+        @content
+
+.navbar_container
+    display: flex
+    flex-direction: column
+    position: relative
+    min-width: 17.5rem
+    width: 17.5rem
+    height: 100vh
+    transition: width 0.4s ease-in-out ,transform 0.2s ease-in-out , min-width 0.4s ease-in-out,padding 0.4s ease-in-out
+    background: var(--bg-color)
+    padding: 1rem
+    overflow: hidden
+    box-shadow: 0 0 0.1rem 0.1rem #91919117
+    @include media($breakpoint:$breakpoint-lg )
+        min-width: 16.5rem
+        width: 16.5rem
+        padding: 1rem 0.8rem
+    @include media($breakpoint:$breakpoint-md )
+        min-width: 0
+        width: 0
+        padding: 1rem 0
+        transform: translateX(-105%)
+        position: fixed
+        z-index: 5
+        left: 0
+        top: 0
+    .menu_container
+
+        svg
+            path:not([fill="none"])
+                fill: var(--text-bold-color)
+                opacity: 0.9
+            path[stroke]
+                stroke: var(--text-bold-color)
+                opacity: 0.9
+
+.mini
+    min-width: 4rem
+    width: 4rem
+    padding: 1rem 0.3rem
+    align-items: center
+    overflow: hidden
+    @include media($breakpoint:$breakpoint-lg )
+        min-width: 3.5rem
+        width: 3.5rem
+    @include media($breakpoint:$breakpoint-md )
+        min-width: 0
+        width: 0
+        padding: 1rem 0
+        transform: translateX(-105%)
+        position: fixed
+        z-index: 5
+        left: 0
+        top: 0

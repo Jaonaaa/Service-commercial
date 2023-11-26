@@ -1,0 +1,102 @@
+.container_request_form
+    display: flex
+    flex-direction: column
+    margin: 2rem auto 3rem auto
+    padding: 0 2rem
+    width: 90%
+    .title
+        font-size: 1.7rem
+        font-family: "Sora_R"
+        margin-bottom: 1rem
+        color: var(--text-bold-color)
+    .subtitle
+        font-size: 0.85rem
+        margin-bottom: 1.5rem
+        max-width: 30rem
+    .table_container_request
+        margin: 0 0
+        margin-top: 1rem
+        display: flex
+        width: 100%
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: space-between
+
+        .table_container
+            width: 33rem
+            display: flex
+            justify-content: flex-start
+            // max-width: 27rem
+            max-height: 30rem
+            overflow-y: scroll
+            table
+                width: 27rem
+            .func
+                color: #fff
+                cursor: pointer
+                background: var(--primary)
+                width: 1.4rem
+                height: 1.4rem
+                border-radius: 0.2rem
+                display: flex
+                justify-content: center
+                align-items: center
+                transition: all 0.2s ease-in-out
+                &:hover
+                    background: var(--primary-hovered)
+        .list_request
+            margin-left: 0rem
+            z-index: 3
+            display: flex
+            align-items: flex-start
+            justify-content: flex-start
+            flex-direction: column
+            min-width: 23rem
+            margin: 0 auto
+
+            .title
+                font-size: 1.25rem
+                color: var(--primary)
+                font-weight: bolder
+                margin-bottom: 1.5rem
+            .row_list
+                display: flex
+                min-width: 23rem
+                align-items: center
+                height: 4rem
+                flex-wrap: nowrap
+                justify-content: space-evenly
+                white-space: nowrap
+
+                .name
+                    margin-right: 1rem
+                    width: 7rem
+                .categorie
+                    margin-right: 1rem
+                    width: 7rem
+                .func
+                    color: #fff
+                    cursor: pointer
+                    background: var(--primary)
+                    width: 1.4rem
+                    height: 1.4rem
+                    border-radius: 0.2rem
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    transition: all 0.2s ease-in-out
+                    &:hover
+                        background: var(--primary-hovered)
+
+    .input_
+        z-index: 2
+    .content
+        display: flex
+        flex-direction: column
+    .form
+        z-index: 2
+        display: flex
+        align-items: center
+        justify-content: space-between
+        button
+            margin-right: 4rem

@@ -1,0 +1,120 @@
+.container_message_box
+    display: flex
+    padding-left: 2rem
+    align-items: flex-start
+    margin-top: 3rem
+    width: 100%
+    .container_message
+        display: flex
+        justify-content: center
+        flex-direction: column
+        max-width: 24rem
+        min-width: 24rem
+        .title
+            font-size: 1.4rem
+            font-family: "Sora_SM"
+            margin-bottom: 2rem
+            position: relative
+            width: 100%
+        .btn_proforma
+            position: absolute
+            right: 1rem
+            top: 0rem
+            background: var(--primary)
+            color: #fff
+            font-size: 0.9rem
+            padding: 0.2rem 1rem
+            border-radius: 0.3rem
+            transition: all 0.2s ease-in-out
+            transform: translateY(15%)
+            cursor: pointer
+            &:hover
+                background: var(--primary-hovered)
+        .slider_message
+            display: flex
+            width: 100%
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 1.5rem
+            .block
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 50%
+                cursor: pointer
+                height: 3rem
+                transition: all 0.2s ease-in-out
+                margin-right: 0.3rem
+                opacity: 0.8
+                box-shadow: 0 0 0.1rem 0.1rem var(--box-shadow-color)
+                &:hover
+                    background: var(--primary)
+                    color: #fff
+                    opacity: 1
+                    box-shadow: 0 0 0.1rem 0.1rem var(--primary)
+            .active
+                box-shadow: 0 0 0.2rem 0.1rem var(--primary-hovered)
+                color: var(--primary-hovered)
+                pointer-events: none
+                opacity: 1
+                &:hover
+                    background: var(--primary-hovered)
+        .list
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 100%
+            max-height: 35rem
+            overflow-y: scroll
+            .row
+                width: 100%
+                padding: 1rem 0.8rem
+                display: flex
+                flex-direction: column
+                transition: all 0.2s ease-in-out
+                align-items: center
+                justify-content: space-between
+                &:hover
+                    background: var(--bg-color-hovered)
+                .upper
+                    display: flex
+                    width: 100%
+                    align-items: center
+                    justify-content: space-between
+                .bottom
+                    display: flex
+                    align-items: center
+                    justify-content: flex-end
+                    width: 100%
+                    .see
+                        width: 1.5rem
+                        height: 1.5rem
+                        background: var(--primary)
+                        color: #fff
+                        border-radius: 0.2rem
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        margin: 0 0.3rem
+                        cursor: pointer
+                        transition: all 0.2s ease-in-out
+                        &:hover
+                            background: var(--primary-hovered)
+                    .accept
+                        width: 1.5rem
+                        height: 1.5rem
+                        background: var(--primary)
+                        color: #fff
+                        border-radius: 0.2rem
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        margin: 0 0.3rem
+                        cursor: pointer
+                        transition: all 0.2s ease-in-out
+                        &:hover
+                            background: var(--primary-hovered)
+                    .included
+                        background: #000
+                        &:hover
+                            background: #000

@@ -1,0 +1,45 @@
+.switcher_theme_container
+    display: flex
+    align-items: center
+    background: var(--bg-color-body)
+    border-radius: 0.4rem
+    position: relative
+    position: fixed
+    right: 2.5rem
+    height: 2.5rem
+    width: 2.5rem
+    z-index: 2
+    border-radius: 0.5rem
+    overflow: hidden
+
+    bottom: 5%
+    // box-shadow: 0 0 0.1rem 0.1rem var(--box-shadow-color)
+    .block_theme
+        width: 2.5rem
+        height: 2.5rem
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 0.85rem
+        position: absolute
+        left: 0
+        top: 0
+        z-index: 1
+        cursor: pointer
+        font-family: "Sora_R"
+    .holder
+        content: ""
+        z-index: 1
+        position: absolute
+        width: 100%
+        height: 100%
+        background: var(--primary-hovered)
+        top: 0
+        transition: all 0.2s ease-in-out
+        left: 0
+    .light
+        color: #ffff
+        z-index: 2
+    .dark
+        z-index: 2
+        color: #ffff

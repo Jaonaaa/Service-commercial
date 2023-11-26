@@ -1,0 +1,39 @@
+.container_components
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 5rem auto auto auto
+    flex-wrap: wrap
+    max-width: 100%
+    padding: 1rem 2rem
+    .component_box
+        display: flex
+        justify-content: center
+        position: relative
+        flex-direction: column
+        align-items: center
+        background: var(--bg-color)
+        height: 16rem
+        width: 19rem
+        margin: 0.08rem
+        padding: 1rem
+        border-radius: 0.1rem
+        border: 1.2px solid var(--box-shadow-color)
+        .title_compo
+            position: absolute
+            display: flex
+            top: 0.7rem
+            left: 1rem
+            font-weight: bolder
+            font-family: "Sora_SM"
+            color: var(--primary)
+            justify-content: flex-start
+            width: 100%
+            &::before
+                content: ""
+                position: absolute
+                bottom: -25%
+                left: 0
+                width: 15%
+                height: 1px
+                background: var(--primary)
